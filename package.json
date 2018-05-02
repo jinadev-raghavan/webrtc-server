@@ -1,0 +1,17 @@
+{
+  "name": "cankado-webrtc-server",
+  "version": "1.0.0",
+  "description": "demo server for webrtc",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "LOCAL=TRUE node app.js"
+  },
+  "author": "jinadev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "open": "^0.0.5",
+    "socket.io": "^2.1.0"
+  }
+}
