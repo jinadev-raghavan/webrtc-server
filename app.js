@@ -11,7 +11,7 @@ var https = require('https');
 var http = require('http');
 var server;
 if (process.env.LOCAL) {
-  server = https.createServer(options, app);
+  server = http.createServer(app);
 } else {
   server = http.createServer(app);
 }
@@ -26,7 +26,7 @@ app.get('/', function(req, res){
 server.listen(serverPort, function(){
   console.log('server up and running at %s port', serverPort);
   if (process.env.LOCAL) {
-    open('https://localhost:' + serverPort)
+    open('http://localhost:' + serverPort)
   }
 });
 
